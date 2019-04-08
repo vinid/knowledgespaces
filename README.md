@@ -2,6 +2,9 @@
 
 This package contains code to generate KG embeddings starting from text
 
+## Data
+You can find and download data at the following [link](https://drive.google.com/drive/folders/1nX0EzhMFEFo9LegdTMJUyb6EnICB-zp0?usp=sharing)
+
 ## How To
 The mikolov_example.ipynb contains a short tutorial on how to run 
 and use the software to test and replicate results
@@ -16,7 +19,7 @@ and use the software to test and replicate results
 
 ## Classes Explanation
 
-###Models
+### Models
 
 #### Term embedding
 Wrapper class around gensim word2vec models. Integrate also
@@ -25,23 +28,23 @@ some metadata.
 #### TeeEmbeddings
 Allows to concatenate entity and type embeddings
 
-###Bridges
+### Bridges
 
-####Bridge 
+#### Bridge 
 Represents the word-anchor that allow 
 to bridge words to entities. They also provide a method
 to disambiguate analogies by considering the analogical input.
 
-####CleanBridge
+####C leanBridge
 Fake class that returns the input, can be used with word base embedding
 
-###Evaluetors
+### Evaluetors
 
-####AnalogyEvaluetor
+#### AnalogyEvaluetor
 Offers the possibility to evaluate analogies by taking in input a
 file that contains analogy.
 
-####EvaluatorHandler
+#### EvaluatorHandler
 Just an handler class that allows to handle the evaluation
 and to save results in a file.
 
